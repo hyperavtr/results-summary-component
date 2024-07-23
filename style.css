@@ -84,7 +84,6 @@ main {
 	min-width: 22rem;
 	width: 50%;
 	background: linear-gradient(to bottom, var(--light-slate-blue-background), var(--light-royal-blue-background));
-	padding-top: 0.5rem;
 }
 
 .white-colored {
@@ -141,7 +140,7 @@ main {
 
 .result-section p:nth-child(4) {
 	margin-top: 1rem;
-	width: 75%;
+	width: 71%;
 	text-align: center;
 }
 
@@ -165,7 +164,7 @@ table {
 
 caption {
 	font-size: 1.5rem;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 }
 
 tbody {
