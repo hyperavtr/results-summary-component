@@ -1,0 +1,332 @@
+/*COLORS/FONTS*/
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./fonts/static/HankenGrotesk-ExtraBold.ttf");
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./fonts/static/HankenGrotesk-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./fonts/static/HankenGrotesk-Medium.ttf");
+	font-weight: 500;
+}
+
+:root {
+	/*### Primary*/
+	--light-red: hsl(0, 100%, 67%);
+	--light-red-transparent: hsla(0, 100%, 67%, 0.1);
+	--orangey-yellow: hsl(39, 100%, 56%);
+	--orangey-yellow-transparent: hsla(39, 100%, 56%, 0.1);
+	--green-teal: hsl(166, 100%, 37%);
+	--green-teal-transparent: hsla(166, 100%, 37%, 0.1);
+	--cobalt-blue: hsl(234, 85%, 45%);
+	--cobalt-blue-transparent: hsla(234, 85%, 45%, 0.1);
+
+	/*## Gradients*/
+	--light-slate-blue-background: hsl(252, 100%, 67%);
+	--light-royal-blue-background: hsl(241, 81%, 54%);
+	--violet-blue-circle: hsla(256, 72%, 46%, 1);
+	--persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+	/*### Neutral*/
+	--white: hsl(0, 0%, 100%);
+	--pale-blue: hsl(221, 100%, 96%);
+	--light-lavender: hsl(241, 100%, 89%);
+	--dark-lavender: #8575fb;
+	--dark-gray-blue: hsl(224, 30%, 27%);
+	--light-gray: #9593a1;
+}
+
+/*-----------------------------------------------------*/
+/*common*/
+body {
+	font-family: "Hanken Grotesk";
+	font-size: 18px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body * {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: inherit;
+	gap: 2.5rem;
+	background-color: var(--white);
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	max-width: 46rem;
+}
+
+/*-----------------------------------------------------*/
+/*Result section*/
+.result-section {
+	display: inherit;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 35px;
+	min-height: 29rem;
+	min-width: 22rem;
+	width: 50%;
+	background: linear-gradient(to bottom, var(--light-slate-blue-background), var(--light-royal-blue-background));
+	padding-top: 0.5rem;
+}
+
+.white-colored {
+	color: var(--white);
+}
+
+.light-lavender-colored {
+	color: var(--light-lavender);
+}
+
+.dark-lavender-colored {
+	color: var(--dark-lavender);
+}
+
+/*-----------------------------------------------------*/
+/*Result section, top*/
+.result-section h1 {
+	font-size: 1.5rem;
+	margin-top: 1.4rem;
+}
+
+/*-----------------------------------------------------*/
+/*Result score section*/
+.result-score {
+	border-radius: 50%;
+	width: 12rem;
+	height: 12rem;
+	display: inherit;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.8rem;
+	background: linear-gradient(to bottom, var(--violet-blue-circle), var(--persian-blue-circle));
+}
+
+.result-score p:first-child {
+	font-size: 4rem;
+	font-weight: 800;
+}
+
+.result-score p:last-child {
+	margin-top: -0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+/*-----------------------------------------------------*/
+/*Result section, bottom*/
+.result-section p:nth-child(3) {
+	margin-top: 1.6rem;
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+
+.result-section p:nth-child(4) {
+	margin-top: 1rem;
+	width: 75%;
+	text-align: center;
+}
+
+/*-----------------------------------------------------*/
+
+/*#####################################################*/
+/*Summary section*/
+.summary-section {
+	display: inherit;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+
+table {
+	display: inherit;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+caption {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+
+tbody {
+	display: inherit;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+tr {
+	padding: 1rem 0.8rem 0.6rem 0.8rem;
+	border-radius: 0.5rem;
+	display: grid;
+	width: 200%;
+}
+
+th {
+	font-weight: 500;
+	display: flex;
+	gap: 0.7rem;
+	justify-self: flex-start;
+}
+
+td {
+	justify-self: flex-end;
+	display: flex;
+	margin-top: -1.7rem;
+	gap: 0.5rem;
+}
+
+/*Reaction*/
+tr:nth-of-type(1) {
+	background-color: var(--light-red-transparent);
+	color: var(--light-red);
+}
+
+tr:nth-of-type(1) th::before {
+	content: url(./images/icon-reaction.svg);
+	margin-top: 0.2rem;
+}
+
+/*-----------------------------------------------------*/
+/*Memory*/
+tr:nth-of-type(2) {
+	background-color: var(--orangey-yellow-transparent);
+	color: var(--orangey-yellow);
+}
+
+tr:nth-of-type(2) th::before {
+	content: url(./images/icon-memory.svg);
+	margin-top: 0.2rem;
+}
+
+/*-----------------------------------------------------*/
+/*Verbal*/
+tr:nth-of-type(3) {
+	background-color: var(--green-teal-transparent);
+	color: var(--green-teal);
+}
+
+tr:nth-of-type(3) th::before {
+	content: url(./images/icon-verbal.svg);
+	margin-top: 0.2rem;
+}
+
+/*-----------------------------------------------------*/
+/*Visual*/
+tr:nth-of-type(4) {
+	background-color: var(--cobalt-blue-transparent);
+	color: var(--cobalt-blue);
+}
+
+tr:nth-of-type(4) th::before {
+	content: url(./images/icon-visual.svg);
+	margin-top: 0.2rem;
+}
+
+/*-----------------------------------------------------*/
+/*Points*/
+.dark-gray-blue-colored {
+	color: var(--dark-gray-blue);
+	font-weight: 700;
+}
+
+.light-gray-colored {
+	color: var(--light-gray);
+	font-weight: 700;
+}
+
+/*-----------------------------------------------------*/
+
+a {
+	background: var(--dark-gray-blue);
+	text-align: center;
+	font-weight: 700;
+	padding: 1rem 2.4rem;
+	width: 140%;
+	border-radius: 30px;
+	transition: 0.3ms ease-in;
+	text-decoration: none;
+	margin-bottom: 1.5rem;
+}
+
+a:hover {
+	background: linear-gradient(to bottom, var(--light-slate-blue-background), var(--light-royal-blue-background));
+	transition: 0.3ms ease-in-out;
+}
+
+
+/*#####################################################*/
+/*Media*/
+
+@media only screen and (max-width:691px) {
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.result-section {
+		width: 100vw;
+		margin-bottom: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		position: relative;
+		top: 0;
+		min-height: 26rem;
+		z-index: 1;
+	}
+
+	.result-section h1 {
+		margin-top: 2.5rem;
+		font-size: 1.2rem;
+	}
+
+	.result-score {
+		width: 9rem;
+		height: 9rem;
+	}
+
+	.result-section p:nth-child(3) {
+		font-size: 1.5rem;
+	}
+
+	.result-section p:nth-child(4) {
+		width: 80%;
+	}
+
+	.summary-section {
+		width: 100vw;
+		align-items: center;
+	}
+
+	caption {
+		font-size: 1.3rem;
+		margin-top: -1rem;
+	}
+
+	tr {
+		width: 80vw;
+	}
+
+	a {
+		width: 71vw;
+	}
+}
