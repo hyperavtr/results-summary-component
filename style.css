@@ -1,4 +1,4 @@
-/*COLORS/FONTS*/
+/*Fonts*/
 @font-face {
 	font-family: "Hanken Grotesk";
 	src: url("./fonts/HankenGrotesk-VariableFont_wght.ttf");
@@ -22,6 +22,7 @@
 	font-weight: 500;
 }
 
+/*Colors*/
 :root {
 	/*### Primary*/
 	--light-red: hsl(0, 100%, 67%);
@@ -48,7 +49,6 @@
 	--light-gray: #9593a1;
 }
 
-/*-----------------------------------------------------*/
 /*common*/
 body {
 	font-family: "Hanken Grotesk";
@@ -73,7 +73,6 @@ main {
 	max-width: 46rem;
 }
 
-/*-----------------------------------------------------*/
 /*Result section*/
 .result-section {
 	display: inherit;
@@ -98,14 +97,12 @@ main {
 	color: var(--dark-lavender);
 }
 
-/*-----------------------------------------------------*/
 /*Result section, top*/
 .result-section h1 {
 	font-size: 1.5rem;
 	margin-top: 1.4rem;
 }
 
-/*-----------------------------------------------------*/
 /*Result score section*/
 .result-score {
 	border-radius: 50%;
@@ -130,7 +127,6 @@ main {
 	font-weight: 700;
 }
 
-/*-----------------------------------------------------*/
 /*Result section, bottom*/
 .result-section p:nth-child(3) {
 	margin-top: 1.6rem;
@@ -144,9 +140,7 @@ main {
 	text-align: center;
 }
 
-/*-----------------------------------------------------*/
 
-/*#####################################################*/
 /*Summary section*/
 .summary-section {
 	display: inherit;
@@ -205,7 +199,6 @@ tr:nth-of-type(1) th::before {
 	margin-top: 0.2rem;
 }
 
-/*-----------------------------------------------------*/
 /*Memory*/
 tr:nth-of-type(2) {
 	background-color: var(--orangey-yellow-transparent);
@@ -217,7 +210,6 @@ tr:nth-of-type(2) th::before {
 	margin-top: 0.2rem;
 }
 
-/*-----------------------------------------------------*/
 /*Verbal*/
 tr:nth-of-type(3) {
 	background-color: var(--green-teal-transparent);
@@ -229,7 +221,6 @@ tr:nth-of-type(3) th::before {
 	margin-top: 0.2rem;
 }
 
-/*-----------------------------------------------------*/
 /*Visual*/
 tr:nth-of-type(4) {
 	background-color: var(--cobalt-blue-transparent);
@@ -241,7 +232,6 @@ tr:nth-of-type(4) th::before {
 	margin-top: 0.2rem;
 }
 
-/*-----------------------------------------------------*/
 /*Points*/
 .dark-gray-blue-colored {
 	color: var(--dark-gray-blue);
@@ -253,8 +243,7 @@ tr:nth-of-type(4) th::before {
 	font-weight: 700;
 }
 
-/*-----------------------------------------------------*/
-
+/*Link*/
 a {
 	background: var(--dark-gray-blue);
 	text-align: center;
@@ -273,7 +262,6 @@ a:hover {
 }
 
 
-/*#####################################################*/
 /*Media*/
 
 @media only screen and (max-width:691px) {
